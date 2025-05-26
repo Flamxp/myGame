@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - G.A.M.E</title>
-    <link rel="stylesheet" href="/Styles/style.css">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/landingPage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -15,10 +16,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#" class="active">About</a></li>
-                    <li><a href="support.html">Support</a></li>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="/non-logged user/docs/Contact.html">Contact</a></li>
+                    <li><a href="/non-logged user/docs/About.html">About</a></li>
+                    <li><a href="/non-logged user/docs/support.html">Support</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
@@ -27,15 +28,22 @@
         </div>
     </header>
 
-    <main class="container" style="text-align: center;">
-        <section class="content">
-            <h2 style="font-size: 50px; margin: 20px;">About Us</h2>
-            <div style="margin-bottom: 50px;">
-                <p>G.A.M.E grundades år 2025 av en grupp entusiastiska spelutvecklare med ett enda mål: att revolutionera hur spelare upptäcker och upplever digitala spel. Vi tror på en framtid där spel inte bara är underhållning, utan också ett kraftfullt verktyg för kreativitet, gemenskap och lärande.</p>
-                <p>Vårt team är baserat i Gamington, Sverige – en plats som inte existerar men låter cool. Sedan starten har vi samarbetat med över 150 fiktiva spelstudior och lanserat ett helt bibliotek av påhittade spel som aldrig kommer se dagens ljus.</p>
-                <p>Vi är inte verkliga, men vår passion är det. Tack för att du besöker vår sida!</p>
-            </div>
-        </section>
+    <main>
+        <div class="container">
+            <section class="landing-section">
+                <div class="landing-text">
+                    <h1>Connect. Play. Discover.</h1>
+                    <p>Join the ultimate hub for gamers. Explore new games, build communities, and experience next-gen play.</p>
+                    <div class="landing-buttons">
+                        <a href="non-logged user/signUp.html" class="btn btn-primary">Join Now</a>
+                        <a href="non-logged user/signIn.html" class="btn btn-secondary">Sign in</a>
+                    </div>
+                </div>
+                <div class="landing-image">
+                    <video width="500px" height="350px" autoplay controls><source src="/images/tung tung tung sahur_vid.mp4"></video>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
@@ -79,5 +87,6 @@
         </div>
       </footer>
   <script src="script/lightMode.js"></script>
+
 </body>
 </html>

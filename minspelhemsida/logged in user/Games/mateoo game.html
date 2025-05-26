@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CyberQuest | G.A.M.E</title>
+  <link rel="stylesheet" href="/Styles/style.css">
+  <link rel="stylesheet" href="/Styles/Game.css">
+   <script src="../script/addToCart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="/logged in user/main.html"><h1>G.A.M.E</h1></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/logged in user/Games/games.html" class="active">Store</a></li>
+          <li><a href="../library.html">Library</a></li>
+          <li><a href="../Wishlist.html">Wishlist</a></li>
+          <li><a href="../games.html">Store</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        
+        <div class="user-actions">
+                    <a></a><i class="fa-solid fa-moon" class="switch-icon" onclick="switchMode()"></i></a>
+                    <a href="shopping-cart.html" onclick="updateCartBadge()" class="cart-icon"><i class="fas fa-shopping-cart"></i><span id="cart-badge" class="hidden"></span></a>
+                    <a href="/non-logged user/main/index.html" class="user-icon"><i class="fas fa-right-from-bracket"></i></a>
+                  </div>
+      </div>
+    </div>
+  </header>
+
+<script>
+        function GamePage(page) {
+            window.location.href = page;
+        }
+      </script>
+   
+
+  <main>
+    <div class="container">
+      <div class="content">
+        <div class="featured-game">
+          <div class="game-box">
+            <div class="featured-image">
+              <img id="game-image" src="/images/Mateoooo.webp" /><!--Bild-->
+            </div>
+            <div class="featured-info">
+              <span class="badge">NEW RELEASE</span>
+              <h2 id="game-title">Mateoooooooooo</h2><!--Spel namn-->
+              <div class="tags">
+                <span class="tag">Coffe</span>
+                <span class="tag">RPG</span>
+                <span class="tag">Chill</span>
+                <span class="tag">Singleplayer</span>
+              </div>
+              <div class="price-actions">
+                <div class="price" id="game-price">$26.79</div>
+                <button class="btn btn-primary" onclick="addToCart()"><i class="fas fa-cart-plus"></i>Add to cart</button>
+                <button class="btn btn-secondary"><i class="fas fa-heart"></i> Wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-section">
+          <div class="section-header">
+            <h2>Screenshots</h2>
+          </div>
+          <div class="game-grid"><!--Screenshots-->
+            <div class="screenshot"><img src="/images/elementor-placeholder-image.webp" alt="Screenshot 1"/></div>
+            <div class="screenshot"><img src="/images/elementor-placeholder-image.webp" alt="Screenshot 2"/></div>
+            <div class="screenshot"><img src="/images/elementor-placeholder-image.webp" alt="Screenshot 3"/></div>
+        </div>
+
+        <div class="game-section">
+          <div class="section-header">
+            <h2>More like this</h2>
+          </div>
+          <div class="game-grid">
+            <div class="game-card" onclick="GamePage('/logged in user/Games/brrbrr patapim game.html')">
+                <div class="new-badge">New</div>
+                <img src="/images/Brr Brr patapim.webp" alt="Game">
+                <div class="game-info">
+                    <h3>Brr brr patapim</h3>
+                    <div class="game-price">
+                        <span class="current-price">$59.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="game-card" onclick="GamePage('/logged in user/Games/capuccino game.html')">
+                <div class="new-badge">New</div>
+                <img src="/images/Cappucino assasino.webp" alt="Game">
+                <div class="game-info">
+                    <h3>Cappucino assasino</h3>
+                    <div class="game-price">
+                        <span class="current-price">$49.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="game-card" onclick="GamePage('/logged in user/Games/lirili game.html')">
+                <div class="new-badge">New</div>
+                <img src="/images/Lirril larila.webp" alt="Game">
+                <div class="game-info">
+                    <h3>Lirili larila</h3>
+                    <div class="game-price">
+                        <span class="current-price">$39.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="game-card" onclick="GamePage('/logged in user/Games/mateoo game.html')">
+                <div class="new-badge">New</div>
+                <div class="discount-badge">-33%</div>
+                <img src="/images/Mateoooo.webp" alt="Game">
+                <div class="game-info">
+                    <h3>Mateoooooooooooo</h3>
+                    <div class="game-price">
+                        <span class="original-price">$39.99</span>
+                        <span class="current-price">$26.79</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="https://www.mcdonalds.com/se/sv-se/jobb/sok-jobb.html?gad_source=1&gad_campaignid=81653981&gbraid=0AAAAADun9VMHsnkU-ckvl4REyOZrrmuF0&gclid=Cj0KCQjwucDBBhDxARIsANqFdr1EAQLX3AWhq7rJ6Js-OkhppJGwxFw5Sd3XGxA0qA_KLd-0VEKUsJcaAib2EALw_wcB">Jobs</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Help</h3>
+          <ul>
+            <li><a href="https://www.1177.se/liv--halsa/psykisk-halsa/">Support</a></li>
+            <li><a href="/About-The-Website/privacy.html">Privacy</a></li>
+            <li><a href="/About-The-Website/terms.html">Terms</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Store</h3>
+          <ul>
+            <li><a href="/logged in user/main.html">Home</a></li>
+            <li><a href="/non-logged user/main/index.html">Landing page</a></li>
+            <li><a href="/logged in user/Wishlist.html">Wishlist</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="https://x.com/kanyewest?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">X(Twitter)</a></li>
+            <li><a href="https://www.facebook.com/zuck">Facebook</a></li>
+            <li><a href="https://www.instagram.com/bratiwka_05/">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Title of the website. DISCLAIMER!!! this website is not real</p>
+      </div>
+    </div>
+  </footer>
+  <script src="/logged in user/script/lightMode.js"></script>
+</body>
+</html>

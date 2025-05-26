@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - G.A.M.E</title>
+  <link rel="stylesheet" href="/Styles/style.css" />
+  <link rel="stylesheet" href="/Styles/signup.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="main/index.html"><h1>G.A.M.E</h1></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="signup-container">
+      <div class="signup-box">
+        <h2>Sign Up</h2>
+        <form method="post">
+    <p style="color: #38bdf8;">required*</p><br>
+  
+  <div class="form-group">
+    <label for="username">Username*</label><br />
+    <input type="username" id="Username" name="Email" required />
+  </div>
+
+  <div class="form-group">
+    <label for="Password">Password*</label><br />
+    <input type="password" id="Password" name="Password" required />
+  </div>
+
+  <button type="submit" onclick="signup()" class="btn btn-primary">Create Account</button>
+</form>
+
+        <p class="signin-link">
+          Already have an account? <a href="signIn.html">Sign In</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function validateForm() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("Password").value;
+
+      if (!username || !password) {
+        alert("Du har missat något.");
+        return false;
+      }
+
+      return true;
+    }
+
+    function signup() {
+      const username = document.getElementById("Username").value;
+      const password = document.getElementById("Password").value;
+
+      if (validateForm()) {
+        alert("Account created successfully!");
+        localStorage.setItem("username", username);
+        window.location.href = "signIn.html";
+        return true;
+      }
+    }
+  </script>
+
+  <footer>
+        <div class="container">
+          <div class="footer-columns">
+            <div class="footer-column">
+              <h3>About</h3>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="https://www.mcdonalds.com/se/sv-se/jobb/sok-jobb.html?gad_source=1&gad_campaignid=81653981&gbraid=0AAAAADun9VMHsnkU-ckvl4REyOZrrmuF0&gclid=Cj0KCQjwucDBBhDxARIsANqFdr1EAQLX3AWhq7rJ6Js-OkhppJGwxFw5Sd3XGxA0qA_KLd-0VEKUsJcaAib2EALw_wcB">Jobs</a></li>
+                <li><a href="#">Press</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Help</h3>
+              <ul>
+                <li><a href="https://www.1177.se/liv--halsa/psykisk-halsa/">Support</a></li>
+                <li><a href="/About-The-Website/privacy.html">Privacy</a></li>
+                <li><a href="/About-The-Website/terms.html">Terms</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Store</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Landing page</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Follow Us</h3>
+              <ul>
+                <li><a href="https://x.com/kanyewest?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">X(Twitter)</a></li>
+                <li><a href="https://www.facebook.com/zuck">Facebook</a></li>
+                <li><a href="https://www.instagram.com/bratiwka_05/">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 Title of the website. DISCLAIMER!!! this website is not real</p>
+          </div>
+        </div>
+      </footer>
+  <script src="script/lightMode.js"></script>
+</body>
+</html>
